@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHomeREST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Smart Home Control Center</h1>
+
+    <!-- Geräteübersicht -->
+    <div id="geraete">
+        <h2>Liste der Smart-Home-Geräte</h2>
+        <ul id="geraeteListe"></ul> <!-- Hier werden die Geräte aus der Datenbank angezeigt -->
+    </div>
+
+    <!-- Formular zum Hinzufügen eines Geräts -->
+    <div id="neuesGeraet">
+        <h2>Neues Gerät hinzufügen</h2>
+        <form id="geraeteForm">
+            <label for="name">Gerätename:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="typ">Gerätetyp:</label>
+            <input type="text" id="typ" name="typ" required>
+            <button type="submit">Hinzufügen</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
